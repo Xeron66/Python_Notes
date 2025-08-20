@@ -1,4 +1,8 @@
-class Animal:
+from abc import ABC, abstractmethod
+
+# Created Animal class as an abstract class so that other classes just 
+# takes the methods (implements) and use it.
+class Animal(ABC):
     def __init__(self):
         # creating empty class variables else it will throw and exception
         # since we dont want to use the constructor to set values!
@@ -32,6 +36,8 @@ class Animal:
         self.__color = color
     
     # This will later be overriden by Dog or Cat class sound() method
+    # Note: This is an abstract method that will need to be implimented by other class instances
+    @abstractmethod
     def sound(self) -> str:
         return f'Some Sound!'
     

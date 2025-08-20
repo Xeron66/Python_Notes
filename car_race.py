@@ -13,9 +13,11 @@ class Car:
         return f'Car: {self.name} -> Distance: {self.distance} | Fuel: {self.fuel}'
 
 
-i = 0
+
 car1: Car = Car("Ferrari", 10, 50)
 car2: Car = Car("Lambo", 8, 40)
+
+i = 0
 print("--- Race Start! Finish line at 50 units ---")
 while True:
     i+=1
