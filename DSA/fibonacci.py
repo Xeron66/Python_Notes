@@ -17,7 +17,7 @@ print(prev2)
 # the loop starts at the 3rd index! thats why n+1
 for i in range(3, n+1):
     newFibo = prev1 + prev2
-    print(newFibo)
+    print(f'{newFibo}')
     prev1 = prev2
     prev2 = newFibo
 
@@ -39,3 +39,7 @@ def myFibo(n):
 # just a loop to run through and print!
 for i in range(0,18):
     print(f'{myFibo(i)}', end=" ") # used end = " " to print it horizontally!
+
+# Printing the nth fibonacci number!
+# note since indexing is starting at 0th do n-1
+print(f"\n{n}'th fibonacci number: {myFibo(n-1)}")
